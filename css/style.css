@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/images/7941359.jpg');
+}
+.root{
+    position: absolute;
+    top: 50px;
+    font-size: 48px;
+    color: #333;
+    background-color: #ffffff5d;
+}
+.pokemonchose{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    gap: 120px;
+}
+.pokemonchose img{
+    width: 200px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.pokemonchose img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.spin{
+    animation: spinBall 1s ease-out;
+}
+
+@keyframes spinBall{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
